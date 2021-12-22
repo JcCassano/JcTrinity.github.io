@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+      <head>
+
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link rel="stylesheet" href="css/style.css" />
+          <title>About Me</title>
+
+
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+      </head>
+
+<body class="login_body">
+
+    <header>
+      <div id="brand"><a href="/">Jc Casanas</a></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contactme.html">Contact</a></li>
+          <li id="login"><a href="login.html" >Login</a></li>
+          <!-- <li id="signup"><a href="/signup">Signup</a></li> -->
+        </ul>
+      </nav>
+
+
+
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul id="mobile-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</aonli>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contactme.html">Contact</a></li>
+          <li id="login"><a href="login.html" >Login</a></li>
+          <!-- <li id="signup"><a href="/signup">Signup</a></li> -->
+        </ul>
+      </div>
+    </header>
+    <script src="script/index.js"></script>
+
+            <div class="video-container">
+                 <video id ="videoBG" autoplay loop muted>
+                     <source src="videos/binary.mp4" type="video/mp4">
+                 </video>
+            </div>
+
+    
+
+      <!-- login form start -->
+  <div class="login_main_wrapper">
+    <div class="login_form">
+      <form class="login_wrapper" action="" method="post">
+            <i class="fas fa-user-circle"></i>
+            <input class="user_input" type="text" name="" placeholder="Username" required>
+            <input class="user_input" type="password" name="" placeholder="Password" required>
+            <div class="options-01">
+                <label class="remember-me"> <input type="checkbox" name="" value=""> Remember me
+                </label>
+                <a href="#">Forgot your password?</a>
+            </div>
+            <input class="login_btn" type="submit" name="" value="LOGIN">
+            <div class="options-02">
+                <p>Not Registered? <a href="#">Create an Account</a>
+                </p>
+            </div>
+       </form>
+      
+      <!-- login form end -->
+
+  <!------------------------------------------------------------>
+  <!--------------------- Signup form start -------------------->
+  <!------------------------------------------------------------>
+
+      <form class="signup_form" action="" method="post">
+        <i class="fas fa-user-plus"></i>
+        <input class="user_input" type="text" name="" placeholder="Username" required>
+        <input class="user_input" type="text" name="" placeholder="Email Address" required>
+        <input class="user_input" type="password" name="" placeholder="Password" required>
+        <input class="login_btn" type="submit" name="" value="SIGN UP">
+        <div class="options-02">
+            <p>Already Registered? <a href="#">Sign In</a>
+            </p>
+        </div>
+      </form>
+      
+  <!------------------------------------------------------------>
+  <!--------------------- Signup form end  --------------------->
+  <!------------------------------------------------------------>
+
+    </div>
+    <!-- form area end -->
+  </div>
+
+  <!------------------------------------------------------------>
+  <!--------------------- JavaScript Start --------------------->
+  <!------------------------------------------------------------>
+
+
+    <script type="text/javascript">
+    $('.options-02 a').click(function(){
+      $('form').animate({
+        height: "toggle", opacity: "toggle"
+      }, "slow");
+    });
+    </script>
+
+  <!------------------------------------------------------------>
+  <!---------------------- JavaScript End ---------------------->
+  <!------------------------------------------------------------>
+           
+</body>
+
+</html>
