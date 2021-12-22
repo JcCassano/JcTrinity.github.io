@@ -632,6 +632,7 @@ h1 {
 /*Dimensions:  iPhone X*/
 @media screen and (max-width: 600px) {   
   .wrapper {
+    padding-top: 40px;
     display:  flex;
   }
   .contact-form {
